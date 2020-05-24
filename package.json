@@ -1,0 +1,33 @@
+{
+  "name": "lambda-mailchimp",
+  "version": "1.0.0",
+  "description": "Create or update a Mailchimp subscriber with an AWS lambda function",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0",
+		"zip": "zip -r lambda.zip .env index.js node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitrows/lambda-mailchimp.git"
+  },
+  "keywords": [
+    "mailchimp",
+    "lambda",
+    "aws",
+    "api",
+    "api-gateway"
+  ],
+  "author": "Nicolas Zimmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitrows/lambda-mailchimp/issues"
+  },
+  "homepage": "https://github.com/gitrows/lambda-mailchimp#readme",
+  "dependencies": {
+    "@gitrows/lambda-response": "^0.2.0",
+    "dotenv": "^8.2.0",
+    "md5": "^2.2.1",
+    "node-fetch": "^2.6.0"
+  }
+}
